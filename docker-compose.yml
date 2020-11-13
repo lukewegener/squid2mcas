@@ -1,0 +1,20 @@
+version: '3'
+services:
+  squid:
+    build: 
+      context: ./squid
+    ports:
+      - "3128:3128"
+    hostname: <insert_squid_hostname_here>
+  log_collector:
+    build: 
+      context: ./log_collector
+    ports: 
+      - "601:601"
+      - "602:602"
+      - "21:21"
+      - "20000-20099:20000-20099"
+    security_opt: 
+      - apparmor:unconfined
+    restart: unless-stopped
+
