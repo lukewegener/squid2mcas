@@ -4,7 +4,7 @@
 - [Usage](#usage)
 
 # Introduction
-Deploys and configures some containers for testing the Automatic Log Upload feature of Microsoft Cloud App Security. This is intended to be used to help quickly generate some web proxy based MCAS discovery data and is not to be used in production.
+Deploys and configures some containers for testing the Automatic Log Upload feature of Microsoft Cloud App Security. The intent is to quickly generate some web proxy based MCAS discovery data and it shouldn't be used in production.
 
 Images used are:
 - sameersbn/squid
