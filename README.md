@@ -33,7 +33,7 @@ CMD (echo 85a0be44fa9934422c5ce585a05df58c55bf4f824489023bb3a3d7752381245c) | st
 [libdefaults]
 	default_realm = YOURDOMAIN.COM
 ```
-6. Edit 'docker-compose.yml'. Under services\squid, replace *<insert_squid_hostname_here>* with the FQDN address for the Squid proxy. For example:
+6. Edit 'docker-compose.yml'. Under services\squid, replace *<insert_squid_hostname_here>* with the FQDN address you want to use for the Squid proxy. For example:
 ```bash
 services:
   squid:
